@@ -42,7 +42,7 @@ export namespace Server {
     return false
   }
 
-  export const Default = lazy(() => create({}).app)
+  export const Default = lazy(() => create({}))
 
   export function ControlPlaneRoutes(upgrade: UpgradeWebSocket, app = new Hono(), opts?: { cors?: string[] }): Hono {
     return app
